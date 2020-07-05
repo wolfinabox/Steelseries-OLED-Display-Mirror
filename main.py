@@ -2,11 +2,10 @@ from gamesense import GameSense
 import time
 from systray import create_system_tray
 import requests
-import pyscreenshot
 from PIL import Image
+import mss
 
-
-SLEEP_TIME=0.1 #time to sleep between sending frames (minus time spent processing)
+SLEEP_TIME=0.0 #time to sleep between sending frames (minus time spent processing)
 WIDTH,HEIGHT=128,52 #dimensions of OLED screen. affects image scaling and targetted devices
 SCREEN_BOUNDS=(0,0,1920,1080) #bounds of PC screen to screenshot
 ARR_SIZE=int((WIDTH*HEIGHT)/8)
@@ -35,10 +34,12 @@ def conv_bitmap_array(arr:list):
 
     
     return new_arr
-
+SCT=mss.mss()
 def get_bmp_screenshot():
     #capture
-    im:Image.Image=pyscreenshot.grab(SCREEN_BOUNDS)
+    # im:Image.Image=pyscreenshot.grab(SCREEN_BOUNDS)
+    cap=SCT.grab(SCREEN_BOUNDS)
+    im = Image.frombytes("RGB", cap.size, cap.bgra, "raw", "BGRX")
     #resize
     im.thumbnail((WIDTH,HEIGHT))
     #conv to bitmap
