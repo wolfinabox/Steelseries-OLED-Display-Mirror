@@ -1,0 +1,24 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Pyinstaller Build",
+            "type": "shell",
+            "command": "pyenv/scripts/pyinstaller --onefile  --hiddenimport pkg_resources.py2_warn --hiddenimport GPUtil --noupx ./main.py",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Pyside2 UI File Compile",
+            "type": "shell",
+            "command": "env/scripts/pyside2-uic ./src/main.ui > ./src/main_ui.py ",
+            "problemMatcher": [],
+            "group": "build"
+        }
+    ]
+}

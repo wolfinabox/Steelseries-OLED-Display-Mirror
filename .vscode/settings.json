@@ -1,0 +1,18 @@
+{
+    "python.linting.pylintArgs": [
+        "--errors-only,--unsafe-load-any-extension=y"
+    ],
+
+    "editor.detectIndentation": false,
+    "editor.tabSize":4,
+    "editor.insertSpaces": true,
+    "files.exclude": {
+        //  "env": true,
+        "build":true,
+        "*.spec":true,
+        ".gitattributes":true,
+        ".gitmodules":true,
+        "LICENSE":true,
+        "**/__pycache__":true,
+    }
+}
