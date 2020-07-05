@@ -8,4 +8,4 @@ To run, install Python 3.8 (should work on any "recent" version really, but you'
 
 Example:
 
-[![Example](https://media1.giphy.com/media/ZZxafzsSIvDrHCJpK2/giphy.gif)](https://www.youtube.com/watch?v=9TKi0caA9hU)
+[Example](https://media3.giphy.com/media/MFPNPTrkW0Rtncbrjx/giphy.gif)
