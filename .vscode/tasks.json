@@ -6,19 +6,16 @@
         {
             "label": "Pyinstaller Build",
             "type": "shell",
-            "command": "pyenv/scripts/pyinstaller --onefile  --hiddenimport pkg_resources.py2_warn --hiddenimport GPUtil --noupx ./main.py",
+            "command": "${workspaceFolder}/pyenv/scripts/pyinstaller.exe --windowed --noupx --onefile --name=oled_mirror --icon=./icon.ico ./mainapp.py",
             "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+
         },
+
         {
-            "label": "Pyside2 UI File Compile",
+            "label": "Compile PySide2 UI Files",
             "type": "shell",
-            "command": "env/scripts/pyside2-uic ./src/main.ui > ./src/main_ui.py ",
-            "problemMatcher": [],
-            "group": "build"
+            "command": "${workspaceFolder}/pyenv/scripts/pyside2-uic ${workspaceFolder}/main.ui >${workspaceFolder}/main_ui.py",
+            "problemMatcher": []
         }
     ]
 }
