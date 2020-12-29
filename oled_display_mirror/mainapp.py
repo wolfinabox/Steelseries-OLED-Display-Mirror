@@ -1,9 +1,9 @@
 from PySide2.QtWidgets import QMainWindow,QApplication
 from PySide2.QtCore import QEvent
 from PySide2.QtGui import QStatusTipEvent
-from main_ui import Ui_MainWindow
+from oled_display_mirror.main_ui import Ui_MainWindow
 import sys
-from main import OLED_Displayer,SCT
+from oled_display_mirror.main import OLED_Displayer,SCT
 import threading
 
 def is_int(s:str):

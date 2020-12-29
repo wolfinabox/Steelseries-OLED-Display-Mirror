@@ -35,10 +35,10 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "oled-display-mirror=mainapp:main"
+            "oled-display-mirror=oled_display_mirror.mainapp:main"
         ]
     },
-    packages=find_packages(include="*"),
+    packages=find_packages(include=["oled_display_mirror", "oled_display_mirror.*"]),
     version="0.1.0",
     zip_safe=False
 )
