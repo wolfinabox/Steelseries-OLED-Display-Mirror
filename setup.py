@@ -38,6 +38,7 @@ setup(
             "oled-display-mirror=mainapp:main"
         ]
     },
+    packages=find_packages(include="*"),
     version="0.1.0",
     zip_safe=False
 )
