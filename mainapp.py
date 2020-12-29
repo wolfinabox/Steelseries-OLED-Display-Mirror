@@ -96,10 +96,14 @@ class MainWindow(QMainWindow):
         self.ui.stop_button.setDisabled(True)
 
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
+def main(args):
+    app = QApplication(args)
 
     window = MainWindow()
     window.show()
 
     sys.exit(app.exec_())
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv))

@@ -35,7 +35,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "oled-display-mirror=mainapp"
+            "oled-display-mirror=mainapp:main"
         ]
     },
     version="0.1.0",
