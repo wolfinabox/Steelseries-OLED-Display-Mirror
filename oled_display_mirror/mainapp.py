@@ -1,9 +1,9 @@
 from PySide2.QtWidgets import QMainWindow,QApplication
 from PySide2.QtCore import QEvent
 from PySide2.QtGui import QStatusTipEvent
-from main_ui import Ui_MainWindow
+from oled_display_mirror.main_ui import Ui_MainWindow
 import sys
-from main import OLED_Displayer,SCT
+from oled_display_mirror.main import OLED_Displayer,SCT
 import threading
 
 def is_int(s:str):
@@ -96,10 +96,14 @@ class MainWindow(QMainWindow):
         self.ui.stop_button.setDisabled(True)
 
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
+def main(args):
+    app = QApplication(args)
 
     window = MainWindow()
     window.show()
 
     sys.exit(app.exec_())
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv))

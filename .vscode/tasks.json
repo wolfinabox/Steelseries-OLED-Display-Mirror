@@ -6,7 +6,7 @@
         {
             "label": "Pyinstaller Build",
             "type": "shell",
-            "command": "${workspaceFolder}/pyenv/scripts/pyinstaller.exe --windowed --noupx --onefile --name=oled_mirror --icon=./icon.ico ./mainapp.py",
+            "command": "${workspaceFolder}/pyenv/scripts/pyinstaller.exe --windowed --noupx --onefile --name=oled_mirror --icon=${workspaceFolder}/oled_display_mirror/icon.ico ${workspaceFolder}/oled_display_mirror/mainapp.py",
             "problemMatcher": [],
 
         },
@@ -14,7 +14,7 @@
         {
             "label": "Compile PySide2 UI Files",
             "type": "shell",
-            "command": "${workspaceFolder}/pyenv/scripts/pyside2-uic ${workspaceFolder}/main.ui >${workspaceFolder}/main_ui.py",
+            "command": "${workspaceFolder}/pyenv/scripts/pyside2-uic ${workspaceFolder}/main.ui > ${workspaceFolder}/main_ui.py",
             "problemMatcher": []
         }
     ]

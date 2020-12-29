@@ -1,9 +1,9 @@
-from gamesense import GameSense
+from oled_display_mirror.gamesense import GameSense
 import time
 import requests
 from PIL import Image
 import mss
-import hitherdither
+
 SCT=mss.mss()
 IS_MAIN=(__name__=='__main__')
 
