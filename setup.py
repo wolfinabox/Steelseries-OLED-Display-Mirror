@@ -18,7 +18,7 @@ requirements = [
     "pywin32-ctypes==0.2.0",
     "requests==2.24.0",
     "shiboken2==5.15.2",
-    "urllib3==1.25.9",
+    "urllib3==1.26.5",
 ]
 
 setup(
