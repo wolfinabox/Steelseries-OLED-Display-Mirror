@@ -11,7 +11,7 @@ requirements = [
     "mss==6.0.0",
     "numpy==1.19.0",
     "pefile==2019.4.18",
-    "Pillow==7.2.0",
+    "Pillow==9.0.1",
     "pyinstaller==4.0",
     "pyinstaller-hooks-contrib==2020.7",
     "PySide2==5.15.2",
