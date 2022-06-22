@@ -9,7 +9,7 @@ requirements = [
     "future==0.18.2",
     "idna==2.10",
     "mss==6.0.0",
-    "numpy==1.19.0",
+    "numpy==1.22.0",
     "pefile==2019.4.18",
     "Pillow==7.2.0",
     "pyinstaller==4.0",
