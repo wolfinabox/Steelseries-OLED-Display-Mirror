@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 requirements = [
     "altgraph==0.17",
-    "certifi==2020.6.20",
+    "certifi==2022.12.7",
     "chardet==3.0.4",
     "EasyProcess==0.3",
     "entrypoint2==0.2.1",
